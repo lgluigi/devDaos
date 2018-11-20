@@ -1,0 +1,22 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html 
+xmlns:h="http://xmlns.jcp.org/jsf/html">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+<title>Insert Dev</title>
+</head>
+<h:body>
+<h1>TELA DE CADASTRO DEV</h1>
+<h:form>
+
+<p>Dev's name</p><h:inputText value="#{desenvolvedorMB.desenvolvedor.nome}"></h:inputText><br/>
+<p>Dev's focus</p><h:inputText value="#{desenvolvedorMB.desenvolvedor.setor}"></h:inputText><br/>
+<p>Dev's cash</p><h:inputText value="#{desenvolvedorMB.desenvolvedor.salario}"></h:inputText><br/><br/>
+<h:commandButton action="#{desenvolvedorMB.ConexaoBanco}" value="Conexao teste" ></h:commandButton><br/><br/>
+<h:commandButton action="#{desenvolvedorMB.insertDev}" value="Insert dev" ></h:commandButton><br/><br/><br/>
+<h:commandButton action="#{desenvolvedorMB.excluirDev}" value="Excluir dev (by name)" ></h:commandButton><br/><br/><br/>
+<h:commandButton action="#{desenvolvedorMB.UpdateData}" value="update dev" ></h:commandButton><br/><br/><br/>
+<h:commandLink action="cadastro"> \\ Voltar </h:commandLink>
+</h:form>
+</h:body>
+</html>
